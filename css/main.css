@@ -1,0 +1,186 @@
+*{
+	border:0;
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	color: white;
+}
+
+body{
+    background-image:url('../img/urb.png');
+    background-attachment:fixed;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+nav .nav{
+	display: flex;
+	justify-content: center;
+	color: white;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	font-size:23px;
+	font-weight:bold;
+}
+
+
+
+span.animated.infinite.bounce{
+	font-weight: bold;
+	color:yellow;
+	display: flex;
+	justify-content: center;
+	margin: 15px, 15px;
+	font-size:118px;
+}
+
+.responsive{
+	width:100%;
+	height: 100px;
+	object-fit: scale-down;
+
+}
+
+.row{
+	background-color:black;
+}
+h4 , h3{
+	text-align: center;
+}
+
+a.btn.btn-primary{
+	float: right;
+	margin-right: 130px;
+}
+
+.col-sm-4{ 
+	border:5px solid yellow;
+	padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.col-sm-4:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: 200;
+}
+
+h1{
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #2fcc71;
+	max-width: 40%;
+	margin: 20px auto;
+	font-weight:200;
+}
+
+a.btn-primary{
+	background-color: yellow;
+	border-color: black;
+	color: black;
+}
+
+/* CONTAINERS For forms*/
+
+.container {max-width: 850px; width: 100%; margin: 0 auto;}
+.four { width: 32.26%; max-width: 32.26%;}
+
+
+/* COLUMNS */
+
+.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+/* CLEARFIX */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* FORM */
+
+.form .plan input, .form .payment-plan input, .form .payment-type input{
+	display: none;
+}
+
+.form label{
+	position: relative;
+	color: #fff;
+	background-color: #aaa;
+	font-size: 26px;
+	text-align: center;
+	height: 150px;
+	line-height: 150px;
+	display: block;
+	cursor: pointer;
+	border: 3px solid transparent;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form .plan input:checked + label, .form .payment-plan input:checked + label, .form .payment-type input:checked + label{
+	border: 5px solid yellow;
+	background-color: #2fcc71;
+}
+
+.form .plan input:checked + label:after, form .payment-plan input:checked + label:after, .form .payment-type input:checked + label:after{
+	content: "\2713";
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 100%;
+	border: 2px solid #333;
+	background-color: #2fcc71;
+	z-index: 999;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+}
+
+.submit{
+	padding: 15px 60px;
+	display: inline-block;
+	border: none;
+	margin: 20px 0;
+	background-color: #2fcc71;
+	color: #fff;
+	border: 2px solid #333;
+	font-size: 18px;
+	-webkit-transition: transform 0.3s ease-in-out;
+	-o-transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+}
+
+.submit:hover{
+	cursor: pointer;
+	transform: rotateX(360deg);
+}
+
+label.debit-label.four.col{
+border:5px solid yellow;
+}
+
+label.cedit-label.four.col{
+border:5px solid yellow;
+}
